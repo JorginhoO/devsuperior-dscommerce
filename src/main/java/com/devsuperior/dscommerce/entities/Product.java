@@ -33,7 +33,7 @@ public class Product {
     @OneToMany(mappedBy = "id.product")
     private Set<OrdemItem> items = new HashSet<>();
 
-    private Product(){
+    public Product(){
     }
 
     public Product(Long id, String name, String description, Double price, String imgUrl) {
